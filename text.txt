@@ -1,0 +1,242 @@
+What does Next.js have that React doesn't 
+
+        Next.js simplifiles the development process
+        ลดความซับซ้อนของกระบวนการพัฒนา
+
+        On top of that it optimizes your web apps
+        เพิ่มประสิทธิภาพเว็บแอปของคุณ
+
+        it dose that throngh it's primary features
+
+        Rendering
+
+
+        it all begins with the Rendering process
+
+
+        คำถามหลักคือ
+        การแสดงผลฝั่งไคลเอนต์ และฝั่งเซิร์ฟเวอร์ อันไหนดีว่ากัน
+        client side   / server side   Rendering
+
+
+
+        client side Rendering or browser Rendering
+        จะเกิดจาก device ของ user หรือ  browser เมื่อผู้ใช้ ร้องขอหน้าเว็บที่เซิร์ฟเวอร์ส่ง html และ javascript code
+        จากนั้น browser จะ download และ excute code javascript เพื่อที่จะไป render ในส่วนของ components และสุดท้ายแสดงผลของเว็บไซต์
+
+        server side Rendering
+        ในทางกลับกัน การ render ฝั่งเซิร์ฟเวอร์ จะทำการ render หน้าเว็บบน server ก่อนจะส่งไปยัง  device หรือ browser ของ user 
+        เมื่อผู้ใช้ ร้องขอ หน้าที่ของ server จะประมวลผลคำขอส่วนของ components บน ฝั่ง server แล้วผล html ที่สมบูรณ์ กลับมายัง device หรือ browser ของ user ทำให้แสดงผลได้ทันที 
+
+        ความแตกต่างที่สำคัญ ด้วยการพัฒนาเว็บทั้งสองแบบ
+
+
+        1.    SEO
+            การเพิ่มประสิทธิภาพเครื่องมือค้นหา SEO
+            bot ของ google จะไม่รู้ว่าการทำ index เพจที่แสดงผลแบบ client side หรือ dynamic page
+
+
+            next js แก้เป็นหาโดย
+            ปัญหานี้แก้ไขได้โดยส่งโค้ดที่แสดงผลล่วงหน้าไปยังไคลเอนต์โดยตรง
+            this issue is resolved by sending pre-rendered code directly to the client
+
+
+            this enables  leading to improved SEO
+              easy crawling
+              indexing
+
+            why should i prioritize SEO ?
+            ทำไมฉันจึงควรจัดลำดับความสำคัญของ SEO ?
+
+            SEO is crucial for optimizing a website's visibility and ranking in search engine result
+            SEO มีความสำคัญอย่างยิ่งต่อการปรับการแสดงผลของเว็บไซต์และการจัดอันดับในผลลัพธ์ของเครื่องมือค้นหา
+
+            ประโยชน์ที่ได้รับจาการทำ SEO
+
+            Increased organic traffic
+            Enhaced user experience
+
+            เพิ่มประมาณการใช้ข้อมูลทั่วไปของผู้ใช้ที่ได้รับการปรับปรุงที่สัมผัสได้ถึงความน่าเชื่อถือและแข่งขันได้จาก ผลการค้นหาที่สูงขึ้น
+
+
+            prioritizing SEO can greatly impact the success of your website and its online presence
+            การจัดลำดับความสำคัญของ SEO สามารถส่งผลกระทบอย่างมากต่อความสำเร็จของเว็บไซต์ของคุณและการปรากฏตัวทางออนไลน์
+
+        2.      Routing  การกำหนดเส้นทาง
+
+            how do we create defferent page routes in React ?
+            เราจะสร้างเส้นทางหน้าที่แตกต่างกันใน React ได้อย่างไร
+            ต้องติดตั้ง  React Router
+
+
+            then how do you create routes in next.js 
+            next.js uses file-based Routing system
+            next.js ใช้ระบบการกำหนดเส้นทางตามไฟล์
+
+
+        3.      Fullstack  ตั้งแต่ v.9
+            API Router
+            enabling the creation of serverless functions to handle API requests
+
+            serverless APIs in next.js are away of creating API endpoints without the nedd for a traditional server
+            API แบบไร้เซิร์ฟเวอร์ใน next.js สามารถรสร้างจุดสิ้นสุด API โดยไม่จำเป็นต้องใช้เซิร์ฟเวอร์แบบเดิม จะช่วยให้เราทำได้สร้างและปรับใช้ API 
+            
+            โดยไม่ต้องจัดการโครงสร้างพื้นฐานของเซิร์ฟเวอร์หรือหรือกังวลเกี่ยวกับการปรับขนาดเซิร์ฟเวออร์ของคุณเป็น ทราฟฟิกเพิ่มขึ้นด้วย
+
+            without managing server infrastructure
+            worrying about scaling their server as traffic Increases
+
+            ทำได้โดยสร้างไฟล์ชื่อ route.js
+
+        4.      Automatic Code Splitting
+        Code splitting is a technique that breaks down large bundles of JavaScript code into smaller, more manageable chunks that can be loaded as needed.
+        การแยกโค้ดเป็นเทคนิคที่แบ่งบันเดิลโค้ด JavaScript ขนาดใหญ่ออกเป็นชิ้นเล็กๆ ที่จัดการได้มากขึ้นซึ่งสามารถโหลดได้ตามต้องการ
+
+        When needed ? 
+        This reduces the initial load time of a website And optimizes the user's experience while browsing
+        ซึ่งจะช่วยลดเวลาการโหลดเริ่มต้นของเว็บไซต์ และปรับปรุงประสบการณ์ของผู้ใช้ในขณะเรียกดู
+
+        Linting
+        Formatting
+        Compiling
+        Bundling
+        Minifying
+        Deploying
+
+
+        Routing
+        Code splitting
+        Search engine optimization
+        Rendering automatically
+
+
+        To put it simply
+        Next.js is an extension of React 
+        That streamlines the
+        development process by
+        automating several functions
+        Allowing developers to focus on what they do best
+
+
+        Let's get started!
+
+        สร้าง folder เก็บโปรเจ็ค  ชื่อ share_prompts
+
+        npx create-next-app@latest ./
+
+        
+        npm run dev
+
+        'use client'
+
+        เมื่อไหร่ควรใช้ server และ client
+
+
+        การสร้าง route
+        user
+
+        การสร้าง route ที่ซับซ้อน ทับซ้อน
+        การ route posts
+
+        posts/new
+        posts/:postId
+        posts/blog-post-1
+        posts/blog-post-2
+        posts/blog-post-3
+        posts/blog-post-4
+
+        สร้าง layout ใน post
+
+
+        workshop
+
+        สร้าง route
+        
+
+
+
+
+Data Fetching
+// 1. Server Side Rendering (SSR)
+fetch('https://...', { cache: 'no-store' });
+
+
+// 2. Static Site Generation (SSG)
+
+fetch('https://...'); // cache: 'force-cache' is the default
+
+
+// 3. Incremental Static Generation (ISR)
+fetch('https://...', { next: { revalidate: 10 } });
+
+
+
+api route
+
+แสดงตัวอย่าง node.js
+
+
+route.js
+Next.js supports the following HTTP methods:
+// 1. **GET**: Retrieves data or resources from the server.
+// 2. **POST**: Submits data to the server to create a new resource.
+// 3. **PUT**: Updates or replaces an existing resource on the server.
+// 4. **PATCH**: Partially updates an existing resource on the server.
+// 5. **DELETE**: Removes a specific resource from the server.
+**HEAD**: Retrieves the headers of a resource without fetching its body.
+// 7. **0PTIONS**: Retrieves the supported HTTP methods and other communication
+options for a resource.
+
+
+
+// 1. Static Metadata
+export const metadata = { title: 'Home',}
+Output:
+<head>
+<titLe>Home</title>
+</head>
+
+
+// 2. Dynamic Metadata
+export async function generateMetadata({ params, searchParams }, parent) {
+  // read route params
+  const id = params.id;
+ 
+  // fetch data
+  const product = await fetch(`https://.../${id}`).then((res) => res.json());
+ 
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+ 
+  return {
+    title: product.title,
+    openGraph: {
+      images: ['/some-specific-page-image.jpg', ...previousImages],
+    },
+  };
+}
+
+
+
+let started
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
