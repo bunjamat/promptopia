@@ -220,6 +220,25 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 let started
 
+ลง extension
+ES7+
+
+
+npx create-next-app@latest ./
+
+npm install bcrypt mongodb mongoose next-auth
+
+สร้าง folder
+  components
+  models
+  styles
+
+สร้าง file   
+  .env
+
+
+โหลดไฟล์ assets : https://drive.google.com/file/d/15bGW9HBImu1p3HAYalnaj2Ig_Sn-1c-f/view
+
 
 
 
