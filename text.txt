@@ -247,6 +247,9 @@ let started
 เรียนพื้นฐานการใช้ react
 https://devahoy.com/intro-to-react-part-1/
 
+การทำ role ใน nextjs ด้วย prisma
+https://www.youtube.com/watch?v=yCJH72nZ8DI
+
 ลง extension
 ES7+
 
