@@ -244,6 +244,9 @@ part of deproy
 
 let started
 
+เรียนพื้นฐานการใช้ react
+https://devahoy.com/intro-to-react-part-1/
+
 ลง extension
 ES7+
 
@@ -266,7 +269,8 @@ npm install bcrypt mongodb mongoose next-auth
 
 สร้างหน้า Home
 
-สร้าง components
+สร้าง 
+components
  Feed
  Formatting
  Nav
@@ -313,6 +317,9 @@ https://www.cryptool.org/en/
     เพิ่ม ip address :  0.0.0.0
      
    3G6nulmrYRcRzNdU
+
+
+
 
 
 
